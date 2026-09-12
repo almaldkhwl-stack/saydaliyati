@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="500" viewBox="0 0 900 500">
+<rect width="900" height="500" rx="30" fill="#e8f4f5"/>
+<circle cx="700" cy="150" r="95" fill="#0aa6a6" opacity=".18"/>
+<rect x="130" y="110" width="360" height="230" rx="28" fill="#ffffff" stroke="#087f8c" stroke-width="8"/>
+<rect x="180" y="165" width="260" height="70" rx="18" fill="#087f8c" opacity=".85"/>
+<text x="310" y="212" text-anchor="middle" font-family="Arial" font-size="30" fill="white">بانادول إكسترا</text>
+<text x="450" y="405" text-anchor="middle" font-family="Arial" font-size="28" fill="#263238">مسكن للألم وخافض للحرارة</text>
+<text x="450" y="455" text-anchor="middle" font-family="Arial" font-size="22" fill="#087f8c">صيدليتي</text>
+</svg>
