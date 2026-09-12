@@ -1,0 +1,4 @@
+
+.wowslider{min-height:260px}
+.wowslider .slide{animation:wsFade .45s ease}
+@keyframes wsFade{from{opacity:.25}to{opacity:1}}

@@ -1,0 +1,57 @@
+
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:Tahoma,Arial,sans-serif;background:#f7fafc;color:#263238;margin:0;line-height:1.8}
+.site-header{background:linear-gradient(135deg,#087f8c,#0aa6a6);color:#fff;text-align:center;padding:32px 15px}
+.site-header h1{margin:0;font-size:2rem}
+.site-header p{margin:5px 0 0}
+.navbar{position:sticky;top:0;z-index:1000}
+.hero,.section,.medicines-header,.search-section,.not-found-section,.medicines-section{padding:42px 0}
+.hero{background:#eef9fa}
+.hero h2{font-weight:700}
+.slider-card{background:#fff;border-radius:16px;padding:12px;box-shadow:0 4px 20px #0002}
+.wowslider{position:relative;overflow:hidden;border-radius:12px;background:#e8f4f5}
+.wowslider .slide{display:none}
+.wowslider .slide.active{display:block}
+.wowslider img{width:100%;height:310px;object-fit:cover;display:block}
+.wowslider-caption{padding:12px;text-align:center;font-weight:700}
+.wowslider-controls{position:absolute;inset:0;display:flex;align-items:center;justify-content:space-between;pointer-events:none}
+.wowslider-controls button{pointer-events:auto;border:0;border-radius:50%;width:42px;height:42px;margin:0 10px;background:#fff9;font-size:20px}
+.wowslider-dots{text-align:center;padding:8px}
+.wowslider-dots button{border:0;width:10px;height:10px;border-radius:50%;margin:4px;padding:0;background:#aaa}
+.wowslider-dots button.active{background:#087f8c}
+.features-grid,.medicines-grid,.info-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px}
+.medicines-grid{grid-template-columns:repeat(4,1fr)}
+.feature-card,.medicine-card,.info-card,.form-card,.aside-card,.table-card{background:#fff;border-radius:14px;padding:20px;box-shadow:0 4px 18px #0001}
+.medicine-card{display:flex;flex-direction:column}
+.medicine-card img{width:100%;height:180px;object-fit:cover;border-radius:10px;background:#eef9fa}
+.medicine-card strong{display:block;margin:10px 0;color:#087f8c;font-size:1.1rem}
+.medicine-card .details-btn{margin-top:auto}
+.search-box{display:flex;gap:10px;flex-wrap:wrap}
+.search-box input{flex:1;min-width:220px}
+.search-box button{white-space:nowrap}
+.search-message{min-height:30px;font-weight:700;margin-top:15px}
+.layout-with-aside{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:25px;align-items:start}
+.aside-card{position:sticky;top:90px}
+.aside-card ul{padding-right:20px}
+.form-page{min-height:60vh;padding:50px 0}
+.form-card{max-width:650px;margin:auto}
+.table-responsive{overflow-x:auto}
+table{width:100%;border-collapse:collapse;background:#fff}
+th,td{border:1px solid #d9e2e5;padding:10px;text-align:right}
+th{background:#e7f3f5}
+.social-icons a{font-size:28px;margin:8px;text-decoration:none}
+footer{background:#263238;color:#fff;text-align:center;padding:25px;margin-top:30px}
+.toast{font-family:Tahoma,Arial,sans-serif}
+@media(max-width:992px){
+ .medicines-grid{grid-template-columns:repeat(2,1fr)}
+ .layout-with-aside{grid-template-columns:1fr}
+ .aside-card{position:static}
+}
+@media(max-width:768px){
+ .features-grid,.medicines-grid,.info-grid{grid-template-columns:1fr}
+ .search-box{flex-direction:column}
+ .search-box>*{width:100%}
+ .wowslider img{height:220px}
+ .site-header h1{font-size:1.6rem}
+}
